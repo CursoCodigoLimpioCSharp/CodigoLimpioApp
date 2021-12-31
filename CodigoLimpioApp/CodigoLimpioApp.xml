@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodigoLimpioApp</name>
+    </assembly>
+    <members>
+        <member name="M:CodigoLimpioApp.Capitulo1.Sangria.#ctor">
+            <summary>
+            La sangria o espaciado de izquierda a derecha, se refiere al espacio que se deja para diferenciar
+            las lineas que pertenecen al mismo método o grupo de código
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo1.Espaciado">
+            <summary>
+            Cantidad de espacios verticalmente que son minimamente necesarios.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo">
+            <summary>
+            Son y sirven como guia para el desarrollador, para escribir código con cierto estilo ya predefinido
+            sea por la empresa, por los lideres de equipos de desarrollo o por los desarrolladores.
+            Es un documento muy util a la hora de ingresar a un nuevo trabajo ya que nos ayuda a saber
+            los lineamientos que se siguen para escribir código y también promueve la homogeneidad, con esto
+            quiero decir que el código tendría el mismo estilo y esto nos ayuda a entenderlo de mejor manera.
+            https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Declaracion.#ctor">
+            <summary>
+            Declaracion de variables
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.IRecibirNombre">
+            <summary>
+            Interfaces
+            Comenzar con prefijo 'I' y continuar con PascalCase
+            Ejemplos:
+            ICargarData, ISubirFichero, IEnviarRecibo
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.VariablesParametrosCampos">
+            <summary>
+            Campos privados, propiedades privadas, variables, parametros de un método
+            Siempre con camelCase
+            </summary>
+        </member>
+        <member name="F:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.VariablesParametrosCampos.campoPrivado">
+            <summary>
+            Campo privado
+            </summary>
+        </member>
+        <member name="P:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.VariablesParametrosCampos.propiedadPrivada">
+            <summary>
+            Propiedad privada
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.VariablesParametrosCampos.#ctor(System.Object)">
+            <summary>
+            Parametro
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodos">
+            <summary>
+            Clases, campos publicos, propiedades publicas, constructores, métodos
+            Siempre con PascalCase
+            </summary>
+        </member>
+        <member name="F:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodos.CampoPublico">
+            <summary>
+            Campo publico
+            </summary>
+        </member>
+        <member name="P:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodos.PropiedadPublica">
+            <summary>
+            Propiedad publica
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodos.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodos.MetodoPublico">
+            <summary>
+            Método publico
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodos.MetodoPrivado">
+            <summary>
+            Método privado
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodosEstaticas">
+            <summary>
+            Lo anterior aplica también los estáticos
+            </summary>
+        </member>
+        <member name="F:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodosEstaticas.CampoPublicoEstatico">
+            <summary>
+            Campo publico estático
+            </summary>
+        </member>
+        <member name="P:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodosEstaticas.PropiedadPublicaEstatica">
+            <summary>
+            Propiedad publica estática
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodosEstaticas.#cctor">
+            <summary>
+            Constructor estático
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodosEstaticas.MetodoPublicoEstatico">
+            <summary>
+            Método publico estático
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Nombre.ClasesPropiedadesMetodosEstaticas.MetodoPrivadoEstatico">
+            <summary>
+            Método privado estático
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo1.ConvencionesDeCodigo.Orden">
+            <summary>
+            Define el orden de los elementos dentro de una clase
+            1.- Campos constantes y/o de solo lectura
+            2.- Campos privados y publicos
+            3.- Propiedades privadas y publicas.
+            4.- Constructores
+            5.- Métodos publicos
+            6.- Métodos privados
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.ComoNombrar">
+            <summary>
+            La clave para nombrar es siempre la descriptibilidad.
+            Esto quiere decir escribir o definir algo de manera que con leerlo quede claro
+            la intención de ese elemento. El objetivo es que cualquier desarrollador pueda
+            leer el código y tener lo mas claro posible la intención de los objetos.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.Constantes">
+            <summary>
+            Debe representar claramente el valor.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.Campos">
+            <summary>
+            Debe representar claramente el valor.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.Propiedades">
+            <summary>
+            Debe representar claramente el valor.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.Clases">
+            <summary>
+            Debe representar claramente el objeto.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.ClasesAbstractas">
+            <summary>
+            Debe representar claramente el objeto.
+            El sufijo es opcional, depende de la convención o del gusto.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.Interfaces">
+            <summary>
+            Debe representar claramente el objeto.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.Variables">
+            <summary>
+            Debe representar claramente el valor.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo2.Metodos">
+            <summary>
+            Debe representar claramente la intención o funcionalidad.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo3.Tamaño">
+            <summary>
+            Se refiere al tamaño vertical y horizontal.
+            Esto depende completamente de donde se este escribiendo el código.
+            Sea una clase, un constructor o un método, la finalidad es siempre la misma,
+            escribir código que no sea extenso, que sea facil de usar, entender y modificar.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo3.Clases">
+            <summary>
+            En mi experiencia he visto clases que van desde las 50 líneas de código hasta más de 14000.
+            El tamaño de las clases va definido por la cantidad de elementos que esta contenga mientras
+            todos esos elementos sean responsabilidad de dicha clase.
+            
+            En mi opinión el tamaño de las clases depende de sus responsabilidades, esto puede variar mucho
+            dependiendo con lo que se esta trabajando.
+            
+            La clase con 14000 líneas de código con la que llegue a trabajar tenia responsabilidades de mas de
+            10 objetos, lo más probable es que con un refactoring dicha clase quedaría con quizás 2000 líneas
+            que serían enteramente de su responsabilidad. Lo que trato de plantear aquí es un tema de organización,
+            donde deberían estar localizado el código de manera que sea fácil de encontrar y que se encuentre
+            donde pertenece.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo3.Clases.Auditor">
+            <summary>
+            Clase Auditor con responsabilidades que no son de dicha clase.
+            En total son 1050 líneas de código en métodos,
+            de los cuales 700 líneas no son responsabilidad de esta clase.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo3.ConstructoresYMetodos">
+            <summary>
+            Los constructores y métodos deberían tener un maxímo de código como lo permita la pantalla donde se este trabajando.
+            El objetivo de esto es no tener que hacer scroll de arriba/abajo ni de izquierda/derecha.
+            El objetivo es ver el código en la pantalla para poder enfocarnos en el.
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo3.ConstructoresYMetodos.#ctor(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.Dictionary{System.Int32,System.String}})">
+            <summary>
+            Obtener las cadenas de texto del parametro diccionarioConDiccionarioMensajes.
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo3.ConstructoresYMetodos.Metodo(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.Dictionary{System.Int32,System.String}})">
+            <summary>
+            Obtener las cadenas de texto del parametro diccionarioConDiccionarioMensajes.
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo3.ConstructoresYMetodos.AñadirMensaje(System.String)">
+            <summary>
+            Añadir mensaje a la propiedad ListaMensajes
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Comentarios">
+            <summary>
+            Vamos a ver cómo podemos comentar de manera concisa y clara.
+            Los comentarios son importantes pero más importante es tener código descriptivo.
+            La idea sería usar los comentarios como un apoyo para determinados casos
+            donde por si solo el código no pueda explicarse a sí mismo.
+            En general nuestro objetivo es que el código se explique a si mismo
+            y en los casos donde no sea posible, usar los comentarios de manera
+            directa, clara y sin comentar demasiado.
+            
+            A la final este capítulo es subjetivo y solo pretende
+            ser una guía y no un libro de reglas sobre lo que es
+            correcto o no. Si se desea crear un proyecto personal,
+            no veo problema alguno en poner todos los comentarios que se quieran.
+            Si el proyecto es empresarial, creo que deberían existir pautas 
+            mínimas sobre los comentarios.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Constantes">
+            <summary>
+            Las constantes no deberían tener comentarios.
+            El nombre debería ser lo suficientemente descriptivo como
+            para no necesitar los comentarios.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Campos">
+            <summary>
+            Los campos no deberían tener comentarios.
+            El nombre debería ser lo suficientemente descriptivo como
+            para no necesitar los comentarios.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Propiedades">
+            <summary>
+            Las propiedades no deberían tener comentarios.
+            El nombre debería ser lo suficientemente descriptivo como
+            para no necesitar los comentarios.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases">
+            <summary>
+            Las clases deberían tener un Summary con el detalle sobre la misma.
+            <see href="https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/xmldoc/recommended-tags"/>
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.Coordenadas">
+            <summary>
+            Contiene los ejes X, Y así como enteros para el ancho y alto.
+            <see href="https://www.aulafacil.com/cursos/matematicas/funciones-matematicas/representacion-de-los-valores-de-x-e-y-en-el-eje-de-coordenadas-cartesianas-l11175">Enlace informativo.</see>
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.Formateador`1">
+            <summary>
+            Formateador generico.
+            </summary>
+            <typeparam name="T">string, int, bool</typeparam>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.AnalizadorString">
+            <summary>
+            Analizador de string para comprobar si el formato es correcto para el sistema.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.Analizador`1">
+            <summary>
+            Analizador generico de valores para el formato de entrada.
+            </summary>
+            <typeparam name="T">string, int, bool</typeparam>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.ProcesadorImagen">
+            <summary>
+            Verifica y comprueba las imagenes antes de ser tratadas para su posterior uso.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.Procesador`1">
+            <summary>
+            Procesador generico.
+            </summary>
+            <typeparam name="T">Bitmap, Image</typeparam>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.FechaHelper">
+            <summary>
+            Utilitario para fechas (tipos DateTime y string).
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Clases.ContextoFactory">
+            <summary>
+            Proveedor de contextos.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.ClasesAbstractas">
+            <summary>
+            Las clases abstractas deberían tener un Summary con el detalle sobre la misma.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.ClasesAbstractas.DesafioAbstract">
+            <summary>
+            Implementacion para los desafios generales del sistema.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.ClasesAbstractas.ProcesoImagenAbstract">
+            <summary>
+            Base para el proceso de imagenes, incluye propiedades y metodos basicos.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Interfaces">
+            <summary>
+            Las interfaces deberían tener un Summary con el detalle sobre la misma.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Interfaces.IBuscador">
+            <summary>
+            Implementación para el buscador de las vistas principales y/o generales.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Interfaces.ISuma">
+            <summary>
+            Implementacion para el proceso de suma.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Interfaces.IPersona">
+            <summary>
+            Objeto persona con lo necesario para funcionar.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Interfaces.IReporteAnual">
+            <summary>
+            Firma a obedecer para añadir el reporte anual.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Variables">
+            <summary>
+            Las variables no deberían tener comentarios.
+            El nombre debería ser lo suficientemente descriptivo como
+            para no necesitar los comentarios.
+            </summary>
+        </member>
+        <member name="T:CodigoLimpioApp.Capitulo4.Metodos">
+            <summary>
+            Los metodos deberían tener un Summary
+            con el detalle sobre el mismo.
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo4.Metodos.#ctor">
+            <summary>
+            Pruebas de los metodos.
+            </summary>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo4.Metodos.EnviarMensaje(System.String)">
+            <summary>
+            Enviar el mensaje dentro del directorio local a todas las maquinas conectadas.
+            </summary>
+            <param name="mensaje">Mensaje a enviar</param>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo4.Metodos.RecibirSolicitud">
+            <summary>
+            Recibir objeto desde el servidor central.
+            </summary>
+            <returns>object con valor null</returns>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo4.Metodos.ObtenerCoordenadasImagen(System.Drawing.Bitmap)">
+            <summary>
+            Obtener objeto Rectangle con las coordenadas del Bitmap de los parametros.
+            </summary>
+            <param name="imagen">Imagen de donde saldrán las coordenadas</param>
+            <returns>Rectangle</returns>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo4.Metodos.CalcularSuma(System.Int32,System.Int32)">
+            <summary>
+            Calcular y retornar suma de los parametros.
+            </summary>
+            <param name="numero1"></param>
+            <param name="numero2"></param>
+            <returns>Suma de los parametros</returns>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo4.Metodos.UnirCadenasTexto(System.String,System.String)">
+            <summary>
+            Unir parametros string en un solo string con un guion en el centro.
+            </summary>
+            <param name="texto1">Primer texto</param>
+            <param name="texto2">Segundo texto</param>
+            <returns>texto1 - texto2</returns>
+        </member>
+        <member name="M:CodigoLimpioApp.Capitulo4.Metodos.UnirCadenasTextoAuxiliar(System.String,System.String)">
+            <summary>
+            Unir parametros string en un solo string con un guion en el centro.
+            </summary>
+        </member>
+    </members>
+</doc>
