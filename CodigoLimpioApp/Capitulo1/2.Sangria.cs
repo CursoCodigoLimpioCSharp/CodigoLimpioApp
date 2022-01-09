@@ -19,6 +19,9 @@ namespace CodigoLimpioApp.Capitulo1
                 "FROM ... " +
                 "WHERE ... " +
                 "GROUP BY ... " +
+                "GROUP BY ... " +
+                "GROUP BY ... " +
+                "GROUP BY ... " +
                 "ORDER BY ...;";
 
             string consultaSQLConFormato1 = string.Format("SELECT * FROM {0} WHERE {1} GROUP BY {2} ORDER BY {3};", "", "", "", "");
@@ -30,8 +33,12 @@ namespace CodigoLimpioApp.Capitulo1
                 "");
 
             // Caso con pocos valores
+            // No hace falta pasar los valores a las lineas de abajo
+            // Ya que son pocos valores, se ve bien en una sola linea
             string.Format("{0}{1}{2}", "0", "1", "2");
+
             // Caso con muchos valores
+            // Hay mucho espacio
             string.Format("{0}{1}{2}{3}{4}{5}",
                            "0",
                            "1",
@@ -39,6 +46,7 @@ namespace CodigoLimpioApp.Capitulo1
                            "3",
                            "4",
                            "5");
+
             // Caso con muchos valores mejor formateado
             string.Format("{0}{1}{2}{3}{4}{5}",
                 "0",
@@ -48,19 +56,21 @@ namespace CodigoLimpioApp.Capitulo1
                 "4",
                 "5");
 
+            // Mal porque no tiene sangria
             if (true)
             {
             //TODO
             }
 
+            // Mal porque tiene mucha sangria
             if (true)
             {
                     //TODO
             }
 
+            // Bien, tiene la sangria justa
             if (true)
             {
-                //TODO
                 //TODO
                 //TODO
                 //TODO
