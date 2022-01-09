@@ -6,6 +6,10 @@ namespace CodigoLimpioApp.Capitulo1
 {
     public class Tipeo
     {
+        /// <summary>
+        /// Diferentes tipos de tipeo o escritura, estos son estilos de escritura
+        /// que se aplican a frases o varias palabras juntas.
+        /// </summary>
         public Tipeo()
         {
             // camelCase
